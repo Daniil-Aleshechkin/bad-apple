@@ -35,11 +35,16 @@ void sendData(int data) {
 		USART2->DR = (data & 0xFF);
 }
 
-const int MAX_ATTEMPTS = 1000;
+const int MAX_ATTEMPTS = 10000;
 
 int readData(bool* hasTimeout) {
 	int attempts = 0;
 	while((USART2->SR & USART_SR_RXNE) != USART_SR_RXNE) {
+		attempts++;
+		if (attempts > MAX_ATTEMPTS) {
+			*hasTimeout = true;
+			return 0x00;
+		}
 	}
 	
 	return USART2->DR;

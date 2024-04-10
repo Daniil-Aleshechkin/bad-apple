@@ -89,11 +89,6 @@ void vInputTask(void* parameters) {
     hasTimeout = false;
     input = readData(&hasTimeout);
 
-    //sendData(0x44);
-    if (input != 0x00) {
-      //sendData(input);
-    }
-
     if (input == 0xe) {
       sendData(0x51);
       __disable_irq();
