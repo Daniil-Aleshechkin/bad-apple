@@ -20,6 +20,11 @@ void usartInit(void)
 	USART2->CR1 |= USART_CR1_UE;
 	USART2->BRR |= 0x10;
 	USART2->CR1 |= USART_CR1_TE | USART_CR1_RE;
+	USART2->CR1 |= USART_CR1_RXNEIE; // Enable USART interupt
+	
+	uint32_t prioritygroup = NVIC_GetPriorityGrouping();
+	NVIC_SetPriority(USART2_IRQn, NVIC_EncodePriority(prioritygroup, 0, 0));
+
 	USART2->CR1 |= USART_CR1_UE;
 }
 
@@ -30,12 +35,17 @@ void sendData(int data) {
 		USART2->DR = (data & 0xFF);
 }
 
-int readData(bool* hasCompleted) {
-		if ((USART2->SR & USART_SR_RXNE) == USART_SR_RXNE) {
-			return USART2->DR;
-		}
-		else  {
-			*hasCompleted = false;
+const int MAX_ATTEMPTS = 1000;
+
+int readData(bool* hasTimeout) {
+	int attempts = 0;
+	while((USART2->SR & USART_SR_RXNE) != USART_SR_RXNE) {
+		if (attempts > MAX_ATTEMPTS) {
+			*hasTimeout = true;
 			return 0x0;
 		}
+		attempts++;
+	}
+	
+	return USART2->DR;
 }

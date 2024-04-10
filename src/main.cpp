@@ -62,41 +62,42 @@ void vPrintTask(void* parameters) {
   
   for(;;){
     if (!CLI_ENABLED) {
-      
-      if (xSemaphoreTake(xState, portMAX_DELAY)) {
-          __disable_irq();
-          refreshDisplay();
-          __enable_irq();
-          
-          //sendTetrisChars(printState(state));
-          xSemaphoreGive(xState);
-      }
+
+
+      refreshDisplay();
 
     } else {
        __enable_irq();
     }
 
-    vTaskDelay(2);
+    vTaskDelay(3);
 	}
 }
+
+#define FRAMES 6
+#define FRAME_LENGTH 128
+#define BYTES FRAMES*FRAME_LENGTH
 
 void vInputTask(void* parameters) {
   int input;
   int frame = 0;
-  bool hasCompleted = true;
+  bool hasTimeout = false;
 
   for(;;){
-		input = readData(&hasCompleted);
-    
-    if (CLI_ENABLED) {
-      if (input != 0x00) {
-        xQueueSend(xCLIQueue, &input, 0);
-      }
+    __disable_irq();
       
-      continue;
-    }
+    hasTimeout = false;
+    for (int i = 0; i < BYTES; i++) {
+      input = readData(&hasTimeout);
 
+      if (hasTimeout) {
+        break;
+      }
+
+      sendData(input);
+    }
     
+      __enable_irq();
 
     //if (xSemaphoreTake(xState, portMAX_DELAY)) {
     //  xSemaphoreGive(xState);
@@ -105,8 +106,24 @@ void vInputTask(void* parameters) {
 	}
 }
 
+void USART2_IRQHandler(void) {
+  //__disable_irq();
+  bool hasTimeout = false;
+  int input = readData(&hasTimeout);
+  bufferPixel({false, false, false}, 0, 0);
+  //__enable_irq(); 
+}
+
 
 int main() {
+  
+  USART2_IRQHandler();
+        for (int x = 0; x < 32; x++) {
+        for (int y = 0; y < 32; y++) {
+          bufferPixel({true, true, true}, x, y);
+        }
+      }
+
   usartInit();
   displayInit();
   clockInit();
@@ -118,7 +135,7 @@ int main() {
   
   xTaskCreate(vPrintTask, "Print", configMINIMAL_STACK_SIZE + 1000, NULL, mainPRINT_TASK_PRIORITY, NULL);
   xTaskCreate(vInputTask, "Input", configMINIMAL_STACK_SIZE, NULL, mainINPUT_READ_PRIORITY, NULL);
-  xTaskCreate(vCLITask, "CLI", configMINIMAL_STACK_SIZE + 200, NULL, mainCLI_TASK_PRIORITY, NULL);
+  //xTaskCreate(vCLITask, "CLI", configMINIMAL_STACK_SIZE + 200, NULL, mainCLI_TASK_PRIORITY, NULL);
   vTaskStartScheduler();
 
   for (;;) {
