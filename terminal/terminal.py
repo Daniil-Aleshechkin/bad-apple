@@ -20,6 +20,7 @@ CUT_OFF_LEVEL = 124
 
 BYTE_LEVELS = [1, 2, 4, 8, 16, 32, 64, 128]
 
+# For a given frame load up the image
 def get_byte_string_for_frame(frame: int):
     byte_string = []
 
@@ -44,13 +45,6 @@ def get_byte_string_for_frame(frame: int):
 
     return byte_string
 
-# Print the ASCII art
-# for byte in get_byte_string_for_frame(538):
-#     print("SENDING: ", byte)
-    
-
-#     byte_ack = ser.read()
-#     print(byte_ack)
 total_frames = 6562
 frames = 1
 

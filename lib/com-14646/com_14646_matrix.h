@@ -56,6 +56,13 @@ void displayInit(void);
  */
 void clearBuffer(void);
 
+/**
+ * @brief Buffer a frame
+ * 
+ * Resets the display buffer to a default state, effectively clearing any buffered pixel data.
+ * This does not immediately affect the display; `refreshDisplay()` must be called to update the display.
+ * @param 
+ */
 void bufferFrame(uint8_t frame[128]);
 
 #endif

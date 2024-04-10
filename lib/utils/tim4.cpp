@@ -4,11 +4,11 @@
 void init_tim4() {
 	RCC->APB1ENR |= RCC_APB1ENR_TIM4EN;
 	
-	TIM4->PSC = 24;
-	TIM4->ARR = 25000;
+	TIM4->PSC = 20;
+	TIM4->ARR = 35200;
 	
 	/* CR1 CONFIGS */
-	TIM4->CR1 |= TIM_CR1_CKD; // No clock division
+	TIM4->CR1 &= ~TIM_CR1_CKD; // No clock division
 	TIM4->CR1 &= ~TIM_CR1_ARPE; // Auto-reload preload disabled
 	TIM4->CR1 &= ~TIM_CR1_CMS; // Center aligned mode
 	TIM4->CR1 &= ~TIM_CR1_DIR; // Up counter
