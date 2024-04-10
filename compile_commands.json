@@ -136,8 +136,8 @@
 },
 {
   "directory": "/home/daniil/bad-apple/FreeRTOS/Source",
-  "command": "/usr/share/arm-none-eabi/bin/arm-none-eabi-gcc  -I/home/daniil/bad-apple/FreeRTOS/Source/include -I/home/daniil/bad-apple/FreeRTOS -I/home/daniil/bad-apple/FreeRTOS/Source/portable/GCC/ARM_CM3 -mcpu=cortex-m3 -mthumb -fdata-sections -ffunction-sections --specs=nano.specs -Wl,--gc-sections -g -g -std=gnu11 -o CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.obj -c /home/daniil/bad-apple/FreeRTOS/Source/portable/MemMang/heap_2.c",
-  "file": "/home/daniil/bad-apple/FreeRTOS/Source/portable/MemMang/heap_2.c"
+  "command": "/usr/share/arm-none-eabi/bin/arm-none-eabi-gcc  -I/home/daniil/bad-apple/FreeRTOS/Source/include -I/home/daniil/bad-apple/FreeRTOS -I/home/daniil/bad-apple/FreeRTOS/Source/portable/GCC/ARM_CM3 -mcpu=cortex-m3 -mthumb -fdata-sections -ffunction-sections --specs=nano.specs -Wl,--gc-sections -g -g -std=gnu11 -o CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_4.c.obj -c /home/daniil/bad-apple/FreeRTOS/Source/portable/MemMang/heap_4.c",
+  "file": "/home/daniil/bad-apple/FreeRTOS/Source/portable/MemMang/heap_4.c"
 },
 {
   "directory": "/home/daniil/bad-apple/FreeRTOS/Source/portable",

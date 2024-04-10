@@ -202,29 +202,29 @@ list.c.s:
 	cd /home/daniil/bad-apple && $(MAKE) $(MAKESILENT) -f FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/build.make FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/list.c.s
 .PHONY : list.c.s
 
-portable/MemMang/heap_2.obj: portable/MemMang/heap_2.c.obj
-.PHONY : portable/MemMang/heap_2.obj
+portable/MemMang/heap_4.obj: portable/MemMang/heap_4.c.obj
+.PHONY : portable/MemMang/heap_4.obj
 
 # target to build an object file
-portable/MemMang/heap_2.c.obj:
-	cd /home/daniil/bad-apple && $(MAKE) $(MAKESILENT) -f FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/build.make FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.obj
-.PHONY : portable/MemMang/heap_2.c.obj
+portable/MemMang/heap_4.c.obj:
+	cd /home/daniil/bad-apple && $(MAKE) $(MAKESILENT) -f FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/build.make FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_4.c.obj
+.PHONY : portable/MemMang/heap_4.c.obj
 
-portable/MemMang/heap_2.i: portable/MemMang/heap_2.c.i
-.PHONY : portable/MemMang/heap_2.i
+portable/MemMang/heap_4.i: portable/MemMang/heap_4.c.i
+.PHONY : portable/MemMang/heap_4.i
 
 # target to preprocess a source file
-portable/MemMang/heap_2.c.i:
-	cd /home/daniil/bad-apple && $(MAKE) $(MAKESILENT) -f FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/build.make FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.i
-.PHONY : portable/MemMang/heap_2.c.i
+portable/MemMang/heap_4.c.i:
+	cd /home/daniil/bad-apple && $(MAKE) $(MAKESILENT) -f FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/build.make FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_4.c.i
+.PHONY : portable/MemMang/heap_4.c.i
 
-portable/MemMang/heap_2.s: portable/MemMang/heap_2.c.s
-.PHONY : portable/MemMang/heap_2.s
+portable/MemMang/heap_4.s: portable/MemMang/heap_4.c.s
+.PHONY : portable/MemMang/heap_4.s
 
 # target to generate assembly for a file
-portable/MemMang/heap_2.c.s:
-	cd /home/daniil/bad-apple && $(MAKE) $(MAKESILENT) -f FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/build.make FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.s
-.PHONY : portable/MemMang/heap_2.c.s
+portable/MemMang/heap_4.c.s:
+	cd /home/daniil/bad-apple && $(MAKE) $(MAKESILENT) -f FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/build.make FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_4.c.s
+.PHONY : portable/MemMang/heap_4.c.s
 
 queue.obj: queue.c.obj
 .PHONY : queue.obj
@@ -340,9 +340,9 @@ help:
 	@echo "... list.obj"
 	@echo "... list.i"
 	@echo "... list.s"
-	@echo "... portable/MemMang/heap_2.obj"
-	@echo "... portable/MemMang/heap_2.i"
-	@echo "... portable/MemMang/heap_2.s"
+	@echo "... portable/MemMang/heap_4.obj"
+	@echo "... portable/MemMang/heap_4.i"
+	@echo "... portable/MemMang/heap_4.s"
 	@echo "... queue.obj"
 	@echo "... queue.i"
 	@echo "... queue.s"

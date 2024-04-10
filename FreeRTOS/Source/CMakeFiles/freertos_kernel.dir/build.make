@@ -167,19 +167,19 @@ FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/timers.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/freertos_kernel.dir/timers.c.s"
 	cd /home/daniil/bad-apple/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/daniil/bad-apple/FreeRTOS/Source/timers.c -o CMakeFiles/freertos_kernel.dir/timers.c.s
 
-FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.obj: FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/flags.make
-FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.obj: FreeRTOS/Source/portable/MemMang/heap_2.c
-FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.obj: FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniil/bad-apple/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.obj"
-	cd /home/daniil/bad-apple/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.obj -MF CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.obj.d -o CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.obj -c /home/daniil/bad-apple/FreeRTOS/Source/portable/MemMang/heap_2.c
+FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_4.c.obj: FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/flags.make
+FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_4.c.obj: FreeRTOS/Source/portable/MemMang/heap_4.c
+FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_4.c.obj: FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniil/bad-apple/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_4.c.obj"
+	cd /home/daniil/bad-apple/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_4.c.obj -MF CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_4.c.obj.d -o CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_4.c.obj -c /home/daniil/bad-apple/FreeRTOS/Source/portable/MemMang/heap_4.c
 
-FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.i"
-	cd /home/daniil/bad-apple/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/daniil/bad-apple/FreeRTOS/Source/portable/MemMang/heap_2.c > CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.i
+FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_4.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_4.c.i"
+	cd /home/daniil/bad-apple/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/daniil/bad-apple/FreeRTOS/Source/portable/MemMang/heap_4.c > CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_4.c.i
 
-FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.s"
-	cd /home/daniil/bad-apple/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/daniil/bad-apple/FreeRTOS/Source/portable/MemMang/heap_2.c -o CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.s
+FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_4.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_4.c.s"
+	cd /home/daniil/bad-apple/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/daniil/bad-apple/FreeRTOS/Source/portable/MemMang/heap_4.c -o CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_4.c.s
 
 # Object files for target freertos_kernel
 freertos_kernel_OBJECTS = \
@@ -190,7 +190,7 @@ freertos_kernel_OBJECTS = \
 "CMakeFiles/freertos_kernel.dir/stream_buffer.c.obj" \
 "CMakeFiles/freertos_kernel.dir/tasks.c.obj" \
 "CMakeFiles/freertos_kernel.dir/timers.c.obj" \
-"CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.obj"
+"CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_4.c.obj"
 
 # External object files for target freertos_kernel
 freertos_kernel_EXTERNAL_OBJECTS =
@@ -202,7 +202,7 @@ FreeRTOS/Source/libfreertos_kernel.a: FreeRTOS/Source/CMakeFiles/freertos_kernel
 FreeRTOS/Source/libfreertos_kernel.a: FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/stream_buffer.c.obj
 FreeRTOS/Source/libfreertos_kernel.a: FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/tasks.c.obj
 FreeRTOS/Source/libfreertos_kernel.a: FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/timers.c.obj
-FreeRTOS/Source/libfreertos_kernel.a: FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.obj
+FreeRTOS/Source/libfreertos_kernel.a: FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_4.c.obj
 FreeRTOS/Source/libfreertos_kernel.a: FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/build.make
 FreeRTOS/Source/libfreertos_kernel.a: FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/daniil/bad-apple/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C static library libfreertos_kernel.a"

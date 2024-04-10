@@ -3,11 +3,11 @@
 #ifndef RING_BUFFER
 #define RING_BUFFER
 
-#define BUFFER_SIZE 10
+#define BUFFER_SIZE 7
 #define FRAME_SIZE 128
 
 typedef struct {
-    uint8_t buffer[FRAME_SIZE][BUFFER_SIZE];
+    uint8_t buffer[BUFFER_SIZE][FRAME_SIZE];
     int head;
     int tail;
     int size;

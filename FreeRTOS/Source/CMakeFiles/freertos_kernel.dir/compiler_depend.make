@@ -90,7 +90,8 @@ FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/list.c.obj: FreeRTOS/Source/list.
   FreeRTOS/Source/include/mpu_wrappers.h \
   FreeRTOS/Source/include/list.h
 
-FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.obj: FreeRTOS/Source/portable/MemMang/heap_2.c \
+FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_4.c.obj: FreeRTOS/Source/portable/MemMang/heap_4.c \
+  /home/daniil/tetris-rtos/FreeRTOS/Source/portable/MemMang/heap_4.c \
   /usr/share/arm-none-eabi/arm-none-eabi/include/stdlib.h \
   /usr/share/arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
   /usr/share/arm-none-eabi/arm-none-eabi/include/_ansi.h \
@@ -113,19 +114,19 @@ FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.obj: Fr
   /usr/share/arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
   /usr/share/arm-none-eabi/arm-none-eabi/include/strings.h \
   /usr/share/arm-none-eabi/arm-none-eabi/include/sys/string.h \
-  FreeRTOS/Source/include/FreeRTOS.h \
+  /home/daniil/tetris-rtos/FreeRTOS/Source/include/FreeRTOS.h \
   /usr/share/arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h \
   /usr/share/arm-none-eabi/arm-none-eabi/include/stdint.h \
   /usr/share/arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
   /usr/share/arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
-  FreeRTOS/FreeRTOSConfig.h \
-  FreeRTOS/Source/include/projdefs.h \
-  FreeRTOS/Source/include/portable.h \
-  FreeRTOS/Source/include/deprecated_definitions.h \
-  FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h \
-  FreeRTOS/Source/include/mpu_wrappers.h \
-  FreeRTOS/Source/include/task.h \
-  FreeRTOS/Source/include/list.h
+  /home/daniil/tetris-rtos/FreeRTOS/FreeRTOSConfig.h \
+  /home/daniil/tetris-rtos/FreeRTOS/Source/include/projdefs.h \
+  /home/daniil/tetris-rtos/FreeRTOS/Source/include/portable.h \
+  /home/daniil/tetris-rtos/FreeRTOS/Source/include/deprecated_definitions.h \
+  /home/daniil/tetris-rtos/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h \
+  /home/daniil/tetris-rtos/FreeRTOS/Source/include/mpu_wrappers.h \
+  /home/daniil/tetris-rtos/FreeRTOS/Source/include/task.h \
+  /home/daniil/tetris-rtos/FreeRTOS/Source/include/list.h
 
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/queue.c.obj: FreeRTOS/Source/queue.c \
   /usr/share/arm-none-eabi/arm-none-eabi/include/stdlib.h \
@@ -288,9 +289,21 @@ FreeRTOS/Source/include/stream_buffer.h:
 
 FreeRTOS/Source/queue.c:
 
+/home/daniil/tetris-rtos/FreeRTOS/Source/include/list.h:
+
+/home/daniil/tetris-rtos/FreeRTOS/Source/include/task.h:
+
+/home/daniil/tetris-rtos/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h:
+
+/home/daniil/tetris-rtos/FreeRTOS/FreeRTOSConfig.h:
+
 /usr/share/arm-none-eabi/arm-none-eabi/include/sys/string.h:
 
 /usr/share/arm-none-eabi/arm-none-eabi/include/strings.h:
+
+/home/daniil/tetris-rtos/FreeRTOS/Source/portable/MemMang/heap_4.c:
+
+FreeRTOS/Source/portable/MemMang/heap_4.c:
 
 FreeRTOS/Source/include/event_groups.h:
 
@@ -310,6 +323,8 @@ FreeRTOS/Source/include/projdefs.h:
 
 FreeRTOS/Source/include/FreeRTOS.h:
 
+/home/daniil/tetris-rtos/FreeRTOS/Source/include/portable.h:
+
 /usr/share/arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h:
 
 /usr/share/arm-none-eabi/arm-none-eabi/include/_newlib_version.h:
@@ -323,6 +338,8 @@ FreeRTOS/Source/include/portable.h:
 FreeRTOS/Source/list.c:
 
 /usr/share/arm-none-eabi/arm-none-eabi/include/machine/_default_types.h:
+
+/home/daniil/tetris-rtos/FreeRTOS/Source/include/projdefs.h:
 
 /usr/share/arm-none-eabi/arm-none-eabi/include/sys/_locale.h:
 
@@ -340,13 +357,19 @@ FreeRTOS/FreeRTOSConfig.h:
 
 /usr/share/arm-none-eabi/arm-none-eabi/include/stdint.h:
 
+/home/daniil/tetris-rtos/FreeRTOS/Source/include/FreeRTOS.h:
+
 /usr/share/arm-none-eabi/arm-none-eabi/include/sys/_intsup.h:
+
+/home/daniil/tetris-rtos/FreeRTOS/Source/include/deprecated_definitions.h:
 
 FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h:
 
 FreeRTOS/Source/include/mpu_wrappers.h:
 
 FreeRTOS/Source/stream_buffer.c:
+
+/home/daniil/tetris-rtos/FreeRTOS/Source/include/mpu_wrappers.h:
 
 /usr/share/arm-none-eabi/arm-none-eabi/include/sys/cdefs.h:
 
@@ -367,8 +390,6 @@ FreeRTOS/Source/include/task.h:
 /usr/share/arm-none-eabi/arm-none-eabi/include/sys/reent.h:
 
 /usr/share/arm-none-eabi/arm-none-eabi/include/newlib-nano/newlib.h:
-
-FreeRTOS/Source/portable/MemMang/heap_2.c:
 
 FreeRTOS/Source/croutine.c:
 

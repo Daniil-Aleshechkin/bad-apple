@@ -11,7 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/daniil/bad-apple/FreeRTOS/Source/croutine.c" "FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/croutine.c.obj" "gcc" "FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/croutine.c.obj.d"
   "/home/daniil/bad-apple/FreeRTOS/Source/event_groups.c" "FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/event_groups.c.obj" "gcc" "FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/event_groups.c.obj.d"
   "/home/daniil/bad-apple/FreeRTOS/Source/list.c" "FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/list.c.obj" "gcc" "FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/list.c.obj.d"
-  "/home/daniil/bad-apple/FreeRTOS/Source/portable/MemMang/heap_2.c" "FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.obj" "gcc" "FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.obj.d"
+  "/home/daniil/bad-apple/FreeRTOS/Source/portable/MemMang/heap_4.c" "FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_4.c.obj" "gcc" "FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_4.c.obj.d"
   "/home/daniil/bad-apple/FreeRTOS/Source/queue.c" "FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/queue.c.obj" "gcc" "FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/queue.c.obj.d"
   "/home/daniil/bad-apple/FreeRTOS/Source/stream_buffer.c" "FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/stream_buffer.c.obj" "gcc" "FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/stream_buffer.c.obj.d"
   "/home/daniil/bad-apple/FreeRTOS/Source/tasks.c" "FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/tasks.c.obj" "gcc" "FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/tasks.c.obj.d"
