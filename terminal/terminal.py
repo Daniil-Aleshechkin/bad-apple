@@ -68,5 +68,5 @@ for x in range(1,total_frames // frames):
             print(actual)
             sucessfullySent = expected == len(actual)
 
-    time.sleep(0.1)
+    #time.sleep(0.1)
 ser.close()

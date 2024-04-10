@@ -571,6 +571,30 @@ lib/utils/ring_buffer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/utils/ring_buffer.cpp.s
 .PHONY : lib/utils/ring_buffer.cpp.s
 
+lib/utils/tim4.obj: lib/utils/tim4.cpp.obj
+.PHONY : lib/utils/tim4.obj
+
+# target to build an object file
+lib/utils/tim4.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/utils/tim4.cpp.obj
+.PHONY : lib/utils/tim4.cpp.obj
+
+lib/utils/tim4.i: lib/utils/tim4.cpp.i
+.PHONY : lib/utils/tim4.i
+
+# target to preprocess a source file
+lib/utils/tim4.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/utils/tim4.cpp.i
+.PHONY : lib/utils/tim4.cpp.i
+
+lib/utils/tim4.s: lib/utils/tim4.cpp.s
+.PHONY : lib/utils/tim4.s
+
+# target to generate assembly for a file
+lib/utils/tim4.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/utils/tim4.cpp.s
+.PHONY : lib/utils/tim4.cpp.s
+
 lib/utils/util_STM32.obj: lib/utils/util_STM32.cpp.obj
 .PHONY : lib/utils/util_STM32.obj
 
@@ -682,6 +706,9 @@ help:
 	@echo "... lib/utils/ring_buffer.obj"
 	@echo "... lib/utils/ring_buffer.i"
 	@echo "... lib/utils/ring_buffer.s"
+	@echo "... lib/utils/tim4.obj"
+	@echo "... lib/utils/tim4.i"
+	@echo "... lib/utils/tim4.s"
 	@echo "... lib/utils/util_STM32.obj"
 	@echo "... lib/utils/util_STM32.i"
 	@echo "... lib/utils/util_STM32.s"

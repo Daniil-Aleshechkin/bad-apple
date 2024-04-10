@@ -34,6 +34,7 @@
 #include "com_14646_matrix.h"
 #include <stm32f103xb.h>
 #include "ring_buffer.h"
+#include "tim4.h"
 
 # define mainPRINT_TASK_PRIORITY (tskIDLE_PRIORITY + 2)
 # define mainINPUT_READ_PRIORITY (tskIDLE_PRIORITY + 1)
@@ -85,10 +86,21 @@ void vInputTask(void* parameters) {
   bool hasTimeout = false;
   uint8_t frame[128];
 
+  init_tim4();
+  start_tim4();
   for(;;){
     
-    if (frame_buffer.size == BUFFER_SIZE - 1) {
+    // Buffer a new frame when it's time
+    if (isTim4Updated() && frame_buffer.size > 0) {
       bufferFrame(pop_frame(&frame_buffer));
+      // Reset the clock
+      stop_tim4();
+      start_tim4();
+      continue;
+    }
+
+    // If we don't need more frames don't ask for more...
+    if (frame_buffer.size >= BUFFER_SIZE - 1) {
       continue;
     }
 
