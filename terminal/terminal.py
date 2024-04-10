@@ -2,6 +2,12 @@ import time
 from PIL import Image
 import serial
 import sys
+import pygame
+# Initialize the mixer module
+pygame.mixer.init()
+# Load the sound file
+sound = pygame.mixer.Sound('./bad_apple.wav')
+# Play the sound
 
 def get_image_path_for_frame(frame: int):
     return f"./bad-apple/bad_apple_{frame:03}.png"
@@ -50,9 +56,28 @@ frames = 1
 
 sucessfullySent = False
 
+starting_frame = 9
+
 print(total_frames // frames)
 
-for x in range(1,total_frames // frames):
+for x in range(1,starting_frame):
+    byte_string = get_byte_string_for_frame(x)
+    sucessfullySent = False
+    while(not sucessfullySent):
+        ser.write(b'\x0e')
+        response = ser.read()
+
+        print(response)
+
+        if (response == b'\x51'):
+            ser.write(byte_string)
+            expected = len(byte_string)
+            actual = ser.read(128)
+            print(actual)
+            sucessfullySent = expected == len(actual)
+
+sound.play()
+for x in range(starting_frame,total_frames // frames):
     byte_string = get_byte_string_for_frame(x)
     sucessfullySent = False
     while(not sucessfullySent):
