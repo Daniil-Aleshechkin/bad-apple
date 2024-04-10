@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/daniil/tetris-rtos
+CMAKE_SOURCE_DIR = /home/daniil/bad-apple
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/daniil/tetris-rtos
+CMAKE_BINARY_DIR = /home/daniil/bad-apple
 
 # Include any dependencies generated for this target.
 include FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/depend.make
@@ -72,114 +72,114 @@ include FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/flags.make
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/croutine.c.obj: FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/flags.make
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/croutine.c.obj: FreeRTOS/Source/croutine.c
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/croutine.c.obj: FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniil/tetris-rtos/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/croutine.c.obj"
-	cd /home/daniil/tetris-rtos/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/croutine.c.obj -MF CMakeFiles/freertos_kernel.dir/croutine.c.obj.d -o CMakeFiles/freertos_kernel.dir/croutine.c.obj -c /home/daniil/tetris-rtos/FreeRTOS/Source/croutine.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniil/bad-apple/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/croutine.c.obj"
+	cd /home/daniil/bad-apple/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/croutine.c.obj -MF CMakeFiles/freertos_kernel.dir/croutine.c.obj.d -o CMakeFiles/freertos_kernel.dir/croutine.c.obj -c /home/daniil/bad-apple/FreeRTOS/Source/croutine.c
 
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/croutine.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/freertos_kernel.dir/croutine.c.i"
-	cd /home/daniil/tetris-rtos/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/daniil/tetris-rtos/FreeRTOS/Source/croutine.c > CMakeFiles/freertos_kernel.dir/croutine.c.i
+	cd /home/daniil/bad-apple/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/daniil/bad-apple/FreeRTOS/Source/croutine.c > CMakeFiles/freertos_kernel.dir/croutine.c.i
 
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/croutine.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/freertos_kernel.dir/croutine.c.s"
-	cd /home/daniil/tetris-rtos/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/daniil/tetris-rtos/FreeRTOS/Source/croutine.c -o CMakeFiles/freertos_kernel.dir/croutine.c.s
+	cd /home/daniil/bad-apple/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/daniil/bad-apple/FreeRTOS/Source/croutine.c -o CMakeFiles/freertos_kernel.dir/croutine.c.s
 
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/event_groups.c.obj: FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/flags.make
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/event_groups.c.obj: FreeRTOS/Source/event_groups.c
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/event_groups.c.obj: FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniil/tetris-rtos/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/event_groups.c.obj"
-	cd /home/daniil/tetris-rtos/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/event_groups.c.obj -MF CMakeFiles/freertos_kernel.dir/event_groups.c.obj.d -o CMakeFiles/freertos_kernel.dir/event_groups.c.obj -c /home/daniil/tetris-rtos/FreeRTOS/Source/event_groups.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniil/bad-apple/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/event_groups.c.obj"
+	cd /home/daniil/bad-apple/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/event_groups.c.obj -MF CMakeFiles/freertos_kernel.dir/event_groups.c.obj.d -o CMakeFiles/freertos_kernel.dir/event_groups.c.obj -c /home/daniil/bad-apple/FreeRTOS/Source/event_groups.c
 
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/event_groups.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/freertos_kernel.dir/event_groups.c.i"
-	cd /home/daniil/tetris-rtos/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/daniil/tetris-rtos/FreeRTOS/Source/event_groups.c > CMakeFiles/freertos_kernel.dir/event_groups.c.i
+	cd /home/daniil/bad-apple/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/daniil/bad-apple/FreeRTOS/Source/event_groups.c > CMakeFiles/freertos_kernel.dir/event_groups.c.i
 
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/event_groups.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/freertos_kernel.dir/event_groups.c.s"
-	cd /home/daniil/tetris-rtos/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/daniil/tetris-rtos/FreeRTOS/Source/event_groups.c -o CMakeFiles/freertos_kernel.dir/event_groups.c.s
+	cd /home/daniil/bad-apple/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/daniil/bad-apple/FreeRTOS/Source/event_groups.c -o CMakeFiles/freertos_kernel.dir/event_groups.c.s
 
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/list.c.obj: FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/flags.make
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/list.c.obj: FreeRTOS/Source/list.c
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/list.c.obj: FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniil/tetris-rtos/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/list.c.obj"
-	cd /home/daniil/tetris-rtos/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/list.c.obj -MF CMakeFiles/freertos_kernel.dir/list.c.obj.d -o CMakeFiles/freertos_kernel.dir/list.c.obj -c /home/daniil/tetris-rtos/FreeRTOS/Source/list.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniil/bad-apple/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/list.c.obj"
+	cd /home/daniil/bad-apple/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/list.c.obj -MF CMakeFiles/freertos_kernel.dir/list.c.obj.d -o CMakeFiles/freertos_kernel.dir/list.c.obj -c /home/daniil/bad-apple/FreeRTOS/Source/list.c
 
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/list.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/freertos_kernel.dir/list.c.i"
-	cd /home/daniil/tetris-rtos/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/daniil/tetris-rtos/FreeRTOS/Source/list.c > CMakeFiles/freertos_kernel.dir/list.c.i
+	cd /home/daniil/bad-apple/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/daniil/bad-apple/FreeRTOS/Source/list.c > CMakeFiles/freertos_kernel.dir/list.c.i
 
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/list.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/freertos_kernel.dir/list.c.s"
-	cd /home/daniil/tetris-rtos/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/daniil/tetris-rtos/FreeRTOS/Source/list.c -o CMakeFiles/freertos_kernel.dir/list.c.s
+	cd /home/daniil/bad-apple/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/daniil/bad-apple/FreeRTOS/Source/list.c -o CMakeFiles/freertos_kernel.dir/list.c.s
 
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/queue.c.obj: FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/flags.make
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/queue.c.obj: FreeRTOS/Source/queue.c
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/queue.c.obj: FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniil/tetris-rtos/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/queue.c.obj"
-	cd /home/daniil/tetris-rtos/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/queue.c.obj -MF CMakeFiles/freertos_kernel.dir/queue.c.obj.d -o CMakeFiles/freertos_kernel.dir/queue.c.obj -c /home/daniil/tetris-rtos/FreeRTOS/Source/queue.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniil/bad-apple/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/queue.c.obj"
+	cd /home/daniil/bad-apple/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/queue.c.obj -MF CMakeFiles/freertos_kernel.dir/queue.c.obj.d -o CMakeFiles/freertos_kernel.dir/queue.c.obj -c /home/daniil/bad-apple/FreeRTOS/Source/queue.c
 
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/queue.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/freertos_kernel.dir/queue.c.i"
-	cd /home/daniil/tetris-rtos/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/daniil/tetris-rtos/FreeRTOS/Source/queue.c > CMakeFiles/freertos_kernel.dir/queue.c.i
+	cd /home/daniil/bad-apple/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/daniil/bad-apple/FreeRTOS/Source/queue.c > CMakeFiles/freertos_kernel.dir/queue.c.i
 
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/queue.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/freertos_kernel.dir/queue.c.s"
-	cd /home/daniil/tetris-rtos/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/daniil/tetris-rtos/FreeRTOS/Source/queue.c -o CMakeFiles/freertos_kernel.dir/queue.c.s
+	cd /home/daniil/bad-apple/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/daniil/bad-apple/FreeRTOS/Source/queue.c -o CMakeFiles/freertos_kernel.dir/queue.c.s
 
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/stream_buffer.c.obj: FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/flags.make
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/stream_buffer.c.obj: FreeRTOS/Source/stream_buffer.c
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/stream_buffer.c.obj: FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniil/tetris-rtos/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/stream_buffer.c.obj"
-	cd /home/daniil/tetris-rtos/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/stream_buffer.c.obj -MF CMakeFiles/freertos_kernel.dir/stream_buffer.c.obj.d -o CMakeFiles/freertos_kernel.dir/stream_buffer.c.obj -c /home/daniil/tetris-rtos/FreeRTOS/Source/stream_buffer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniil/bad-apple/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/stream_buffer.c.obj"
+	cd /home/daniil/bad-apple/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/stream_buffer.c.obj -MF CMakeFiles/freertos_kernel.dir/stream_buffer.c.obj.d -o CMakeFiles/freertos_kernel.dir/stream_buffer.c.obj -c /home/daniil/bad-apple/FreeRTOS/Source/stream_buffer.c
 
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/stream_buffer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/freertos_kernel.dir/stream_buffer.c.i"
-	cd /home/daniil/tetris-rtos/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/daniil/tetris-rtos/FreeRTOS/Source/stream_buffer.c > CMakeFiles/freertos_kernel.dir/stream_buffer.c.i
+	cd /home/daniil/bad-apple/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/daniil/bad-apple/FreeRTOS/Source/stream_buffer.c > CMakeFiles/freertos_kernel.dir/stream_buffer.c.i
 
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/stream_buffer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/freertos_kernel.dir/stream_buffer.c.s"
-	cd /home/daniil/tetris-rtos/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/daniil/tetris-rtos/FreeRTOS/Source/stream_buffer.c -o CMakeFiles/freertos_kernel.dir/stream_buffer.c.s
+	cd /home/daniil/bad-apple/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/daniil/bad-apple/FreeRTOS/Source/stream_buffer.c -o CMakeFiles/freertos_kernel.dir/stream_buffer.c.s
 
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/tasks.c.obj: FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/flags.make
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/tasks.c.obj: FreeRTOS/Source/tasks.c
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/tasks.c.obj: FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniil/tetris-rtos/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/tasks.c.obj"
-	cd /home/daniil/tetris-rtos/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/tasks.c.obj -MF CMakeFiles/freertos_kernel.dir/tasks.c.obj.d -o CMakeFiles/freertos_kernel.dir/tasks.c.obj -c /home/daniil/tetris-rtos/FreeRTOS/Source/tasks.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniil/bad-apple/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/tasks.c.obj"
+	cd /home/daniil/bad-apple/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/tasks.c.obj -MF CMakeFiles/freertos_kernel.dir/tasks.c.obj.d -o CMakeFiles/freertos_kernel.dir/tasks.c.obj -c /home/daniil/bad-apple/FreeRTOS/Source/tasks.c
 
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/tasks.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/freertos_kernel.dir/tasks.c.i"
-	cd /home/daniil/tetris-rtos/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/daniil/tetris-rtos/FreeRTOS/Source/tasks.c > CMakeFiles/freertos_kernel.dir/tasks.c.i
+	cd /home/daniil/bad-apple/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/daniil/bad-apple/FreeRTOS/Source/tasks.c > CMakeFiles/freertos_kernel.dir/tasks.c.i
 
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/tasks.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/freertos_kernel.dir/tasks.c.s"
-	cd /home/daniil/tetris-rtos/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/daniil/tetris-rtos/FreeRTOS/Source/tasks.c -o CMakeFiles/freertos_kernel.dir/tasks.c.s
+	cd /home/daniil/bad-apple/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/daniil/bad-apple/FreeRTOS/Source/tasks.c -o CMakeFiles/freertos_kernel.dir/tasks.c.s
 
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/timers.c.obj: FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/flags.make
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/timers.c.obj: FreeRTOS/Source/timers.c
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/timers.c.obj: FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniil/tetris-rtos/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/timers.c.obj"
-	cd /home/daniil/tetris-rtos/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/timers.c.obj -MF CMakeFiles/freertos_kernel.dir/timers.c.obj.d -o CMakeFiles/freertos_kernel.dir/timers.c.obj -c /home/daniil/tetris-rtos/FreeRTOS/Source/timers.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniil/bad-apple/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/timers.c.obj"
+	cd /home/daniil/bad-apple/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/timers.c.obj -MF CMakeFiles/freertos_kernel.dir/timers.c.obj.d -o CMakeFiles/freertos_kernel.dir/timers.c.obj -c /home/daniil/bad-apple/FreeRTOS/Source/timers.c
 
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/timers.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/freertos_kernel.dir/timers.c.i"
-	cd /home/daniil/tetris-rtos/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/daniil/tetris-rtos/FreeRTOS/Source/timers.c > CMakeFiles/freertos_kernel.dir/timers.c.i
+	cd /home/daniil/bad-apple/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/daniil/bad-apple/FreeRTOS/Source/timers.c > CMakeFiles/freertos_kernel.dir/timers.c.i
 
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/timers.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/freertos_kernel.dir/timers.c.s"
-	cd /home/daniil/tetris-rtos/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/daniil/tetris-rtos/FreeRTOS/Source/timers.c -o CMakeFiles/freertos_kernel.dir/timers.c.s
+	cd /home/daniil/bad-apple/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/daniil/bad-apple/FreeRTOS/Source/timers.c -o CMakeFiles/freertos_kernel.dir/timers.c.s
 
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.obj: FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/flags.make
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.obj: FreeRTOS/Source/portable/MemMang/heap_2.c
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.obj: FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniil/tetris-rtos/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.obj"
-	cd /home/daniil/tetris-rtos/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.obj -MF CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.obj.d -o CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.obj -c /home/daniil/tetris-rtos/FreeRTOS/Source/portable/MemMang/heap_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniil/bad-apple/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.obj"
+	cd /home/daniil/bad-apple/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.obj -MF CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.obj.d -o CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.obj -c /home/daniil/bad-apple/FreeRTOS/Source/portable/MemMang/heap_2.c
 
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.i"
-	cd /home/daniil/tetris-rtos/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/daniil/tetris-rtos/FreeRTOS/Source/portable/MemMang/heap_2.c > CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.i
+	cd /home/daniil/bad-apple/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/daniil/bad-apple/FreeRTOS/Source/portable/MemMang/heap_2.c > CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.i
 
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.s"
-	cd /home/daniil/tetris-rtos/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/daniil/tetris-rtos/FreeRTOS/Source/portable/MemMang/heap_2.c -o CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.s
+	cd /home/daniil/bad-apple/FreeRTOS/Source && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/daniil/bad-apple/FreeRTOS/Source/portable/MemMang/heap_2.c -o CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.s
 
 # Object files for target freertos_kernel
 freertos_kernel_OBJECTS = \
@@ -205,19 +205,19 @@ FreeRTOS/Source/libfreertos_kernel.a: FreeRTOS/Source/CMakeFiles/freertos_kernel
 FreeRTOS/Source/libfreertos_kernel.a: FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/portable/MemMang/heap_2.c.obj
 FreeRTOS/Source/libfreertos_kernel.a: FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/build.make
 FreeRTOS/Source/libfreertos_kernel.a: FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/daniil/tetris-rtos/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C static library libfreertos_kernel.a"
-	cd /home/daniil/tetris-rtos/FreeRTOS/Source && $(CMAKE_COMMAND) -P CMakeFiles/freertos_kernel.dir/cmake_clean_target.cmake
-	cd /home/daniil/tetris-rtos/FreeRTOS/Source && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/freertos_kernel.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/daniil/bad-apple/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C static library libfreertos_kernel.a"
+	cd /home/daniil/bad-apple/FreeRTOS/Source && $(CMAKE_COMMAND) -P CMakeFiles/freertos_kernel.dir/cmake_clean_target.cmake
+	cd /home/daniil/bad-apple/FreeRTOS/Source && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/freertos_kernel.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/build: FreeRTOS/Source/libfreertos_kernel.a
 .PHONY : FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/build
 
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/clean:
-	cd /home/daniil/tetris-rtos/FreeRTOS/Source && $(CMAKE_COMMAND) -P CMakeFiles/freertos_kernel.dir/cmake_clean.cmake
+	cd /home/daniil/bad-apple/FreeRTOS/Source && $(CMAKE_COMMAND) -P CMakeFiles/freertos_kernel.dir/cmake_clean.cmake
 .PHONY : FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/clean
 
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/depend:
-	cd /home/daniil/tetris-rtos && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/daniil/tetris-rtos /home/daniil/tetris-rtos/FreeRTOS/Source /home/daniil/tetris-rtos /home/daniil/tetris-rtos/FreeRTOS/Source /home/daniil/tetris-rtos/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/daniil/bad-apple && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/daniil/bad-apple /home/daniil/bad-apple/FreeRTOS/Source /home/daniil/bad-apple /home/daniil/bad-apple/FreeRTOS/Source /home/daniil/bad-apple/FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/depend
 

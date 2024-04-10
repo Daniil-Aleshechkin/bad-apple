@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/daniil/tetris-rtos
+CMAKE_SOURCE_DIR = /home/daniil/bad-apple
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/daniil/tetris-rtos
+CMAKE_BINARY_DIR = /home/daniil/bad-apple
 
 # Include any dependencies generated for this target.
 include FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/depend.make
@@ -72,16 +72,16 @@ include FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/flags.make
 FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/GCC/ARM_CM3/port.c.obj: FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/flags.make
 FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/GCC/ARM_CM3/port.c.obj: FreeRTOS/Source/portable/GCC/ARM_CM3/port.c
 FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/GCC/ARM_CM3/port.c.obj: FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniil/tetris-rtos/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/GCC/ARM_CM3/port.c.obj"
-	cd /home/daniil/tetris-rtos/FreeRTOS/Source/portable && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/GCC/ARM_CM3/port.c.obj -MF CMakeFiles/freertos_kernel_port.dir/GCC/ARM_CM3/port.c.obj.d -o CMakeFiles/freertos_kernel_port.dir/GCC/ARM_CM3/port.c.obj -c /home/daniil/tetris-rtos/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniil/bad-apple/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/GCC/ARM_CM3/port.c.obj"
+	cd /home/daniil/bad-apple/FreeRTOS/Source/portable && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/GCC/ARM_CM3/port.c.obj -MF CMakeFiles/freertos_kernel_port.dir/GCC/ARM_CM3/port.c.obj.d -o CMakeFiles/freertos_kernel_port.dir/GCC/ARM_CM3/port.c.obj -c /home/daniil/bad-apple/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c
 
 FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/GCC/ARM_CM3/port.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/freertos_kernel_port.dir/GCC/ARM_CM3/port.c.i"
-	cd /home/daniil/tetris-rtos/FreeRTOS/Source/portable && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/daniil/tetris-rtos/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c > CMakeFiles/freertos_kernel_port.dir/GCC/ARM_CM3/port.c.i
+	cd /home/daniil/bad-apple/FreeRTOS/Source/portable && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/daniil/bad-apple/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c > CMakeFiles/freertos_kernel_port.dir/GCC/ARM_CM3/port.c.i
 
 FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/GCC/ARM_CM3/port.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/freertos_kernel_port.dir/GCC/ARM_CM3/port.c.s"
-	cd /home/daniil/tetris-rtos/FreeRTOS/Source/portable && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/daniil/tetris-rtos/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c -o CMakeFiles/freertos_kernel_port.dir/GCC/ARM_CM3/port.c.s
+	cd /home/daniil/bad-apple/FreeRTOS/Source/portable && /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/daniil/bad-apple/FreeRTOS/Source/portable/GCC/ARM_CM3/port.c -o CMakeFiles/freertos_kernel_port.dir/GCC/ARM_CM3/port.c.s
 
 # Object files for target freertos_kernel_port
 freertos_kernel_port_OBJECTS = \
@@ -93,19 +93,19 @@ freertos_kernel_port_EXTERNAL_OBJECTS =
 FreeRTOS/Source/portable/libfreertos_kernel_port.a: FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/GCC/ARM_CM3/port.c.obj
 FreeRTOS/Source/portable/libfreertos_kernel_port.a: FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/build.make
 FreeRTOS/Source/portable/libfreertos_kernel_port.a: FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/daniil/tetris-rtos/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libfreertos_kernel_port.a"
-	cd /home/daniil/tetris-rtos/FreeRTOS/Source/portable && $(CMAKE_COMMAND) -P CMakeFiles/freertos_kernel_port.dir/cmake_clean_target.cmake
-	cd /home/daniil/tetris-rtos/FreeRTOS/Source/portable && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/freertos_kernel_port.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/daniil/bad-apple/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libfreertos_kernel_port.a"
+	cd /home/daniil/bad-apple/FreeRTOS/Source/portable && $(CMAKE_COMMAND) -P CMakeFiles/freertos_kernel_port.dir/cmake_clean_target.cmake
+	cd /home/daniil/bad-apple/FreeRTOS/Source/portable && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/freertos_kernel_port.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/build: FreeRTOS/Source/portable/libfreertos_kernel_port.a
 .PHONY : FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/build
 
 FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/clean:
-	cd /home/daniil/tetris-rtos/FreeRTOS/Source/portable && $(CMAKE_COMMAND) -P CMakeFiles/freertos_kernel_port.dir/cmake_clean.cmake
+	cd /home/daniil/bad-apple/FreeRTOS/Source/portable && $(CMAKE_COMMAND) -P CMakeFiles/freertos_kernel_port.dir/cmake_clean.cmake
 .PHONY : FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/clean
 
 FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/depend:
-	cd /home/daniil/tetris-rtos && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/daniil/tetris-rtos /home/daniil/tetris-rtos/FreeRTOS/Source/portable /home/daniil/tetris-rtos /home/daniil/tetris-rtos/FreeRTOS/Source/portable /home/daniil/tetris-rtos/FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/daniil/bad-apple && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/daniil/bad-apple /home/daniil/bad-apple/FreeRTOS/Source/portable /home/daniil/bad-apple /home/daniil/bad-apple/FreeRTOS/Source/portable /home/daniil/bad-apple/FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/depend
 

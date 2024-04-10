@@ -35,7 +35,7 @@ void sendData(int data);
  * 
  * @return The read data byte, or an error code if no data is available.
  */
-int readData(void);
+int readData(bool* hasCompleted);
 
 /**
  * @brief Sends the characters of a printed Tetris board over USART.

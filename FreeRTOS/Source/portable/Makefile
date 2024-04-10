@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/daniil/tetris-rtos
+CMAKE_SOURCE_DIR = /home/daniil/bad-apple
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/daniil/tetris-rtos
+CMAKE_BINARY_DIR = /home/daniil/bad-apple
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/daniil/tetris-rtos && $(CMAKE_COMMAND) -E cmake_progress_start /home/daniil/tetris-rtos/CMakeFiles /home/daniil/tetris-rtos/FreeRTOS/Source/portable//CMakeFiles/progress.marks
-	cd /home/daniil/tetris-rtos && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FreeRTOS/Source/portable/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniil/tetris-rtos/CMakeFiles 0
+	cd /home/daniil/bad-apple && $(CMAKE_COMMAND) -E cmake_progress_start /home/daniil/bad-apple/CMakeFiles /home/daniil/bad-apple/FreeRTOS/Source/portable//CMakeFiles/progress.marks
+	cd /home/daniil/bad-apple && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FreeRTOS/Source/portable/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniil/bad-apple/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/daniil/tetris-rtos && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FreeRTOS/Source/portable/clean
+	cd /home/daniil/bad-apple && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FreeRTOS/Source/portable/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/daniil/tetris-rtos && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FreeRTOS/Source/portable/preinstall
+	cd /home/daniil/bad-apple && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FreeRTOS/Source/portable/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/daniil/tetris-rtos && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FreeRTOS/Source/portable/preinstall
+	cd /home/daniil/bad-apple && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FreeRTOS/Source/portable/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/daniil/tetris-rtos && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/daniil/bad-apple && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/rule:
-	cd /home/daniil/tetris-rtos && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/rule
+	cd /home/daniil/bad-apple && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/rule
 .PHONY : FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ freertos_kernel_port: FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.d
 
 # fast build rule for target.
 freertos_kernel_port/fast:
-	cd /home/daniil/tetris-rtos && $(MAKE) $(MAKESILENT) -f FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/build.make FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/build
+	cd /home/daniil/bad-apple && $(MAKE) $(MAKESILENT) -f FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/build.make FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/build
 .PHONY : freertos_kernel_port/fast
 
 GCC/ARM_CM3/port.obj: GCC/ARM_CM3/port.c.obj
@@ -135,7 +135,7 @@ GCC/ARM_CM3/port.obj: GCC/ARM_CM3/port.c.obj
 
 # target to build an object file
 GCC/ARM_CM3/port.c.obj:
-	cd /home/daniil/tetris-rtos && $(MAKE) $(MAKESILENT) -f FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/build.make FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/GCC/ARM_CM3/port.c.obj
+	cd /home/daniil/bad-apple && $(MAKE) $(MAKESILENT) -f FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/build.make FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/GCC/ARM_CM3/port.c.obj
 .PHONY : GCC/ARM_CM3/port.c.obj
 
 GCC/ARM_CM3/port.i: GCC/ARM_CM3/port.c.i
@@ -143,7 +143,7 @@ GCC/ARM_CM3/port.i: GCC/ARM_CM3/port.c.i
 
 # target to preprocess a source file
 GCC/ARM_CM3/port.c.i:
-	cd /home/daniil/tetris-rtos && $(MAKE) $(MAKESILENT) -f FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/build.make FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/GCC/ARM_CM3/port.c.i
+	cd /home/daniil/bad-apple && $(MAKE) $(MAKESILENT) -f FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/build.make FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/GCC/ARM_CM3/port.c.i
 .PHONY : GCC/ARM_CM3/port.c.i
 
 GCC/ARM_CM3/port.s: GCC/ARM_CM3/port.c.s
@@ -151,7 +151,7 @@ GCC/ARM_CM3/port.s: GCC/ARM_CM3/port.c.s
 
 # target to generate assembly for a file
 GCC/ARM_CM3/port.c.s:
-	cd /home/daniil/tetris-rtos && $(MAKE) $(MAKESILENT) -f FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/build.make FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/GCC/ARM_CM3/port.c.s
+	cd /home/daniil/bad-apple && $(MAKE) $(MAKESILENT) -f FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/build.make FreeRTOS/Source/portable/CMakeFiles/freertos_kernel_port.dir/GCC/ARM_CM3/port.c.s
 .PHONY : GCC/ARM_CM3/port.c.s
 
 # Help Target
@@ -177,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/daniil/tetris-rtos && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/daniil/bad-apple && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

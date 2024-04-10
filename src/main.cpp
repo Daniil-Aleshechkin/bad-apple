@@ -54,11 +54,6 @@ int frames;
 
 void handleInput(int input);
 void printNum(int num);
-char getCharFromNum(int num);
-void autoRepeat();
-void handleDAS(int input, int currentFrame, int* dasState, int* dasFrame);
-void handleExtraSoftDrop(int input, bool* isSoftDropping);
-void autoRepeatMove(bool isLeft);
 
 void vPrintTask(void* parameters);
 
@@ -85,22 +80,14 @@ void vPrintTask(void* parameters) {
 	}
 }
 
-const int NONE_DAS = 0;
-const int LEFT_DAS = 1;
-const int RIGH_TDAS = 2;
-
 void vInputTask(void* parameters) {
-  int dasState = NONE_DAS;
-  int dasFrame = -1;
-  bool isSoftDropping = false;
-
   int input;
   int frame = 0;
+  bool hasCompleted = true;
 
   for(;;){
-		input = readData();
-    //sendData(0x55);
-    //vTaskDelay(2);
+		input = readData(&hasCompleted);
+    
     if (CLI_ENABLED) {
       if (input != 0x00) {
         xQueueSend(xCLIQueue, &input, 0);
@@ -109,15 +96,11 @@ void vInputTask(void* parameters) {
       continue;
     }
 
-    if (xSemaphoreTake(xState, portMAX_DELAY)) {
-      handleInput(input);
-      if (DAS_ENABLED) {
-        handleDAS(input, frame, &dasState, &dasFrame);    
-        handleExtraSoftDrop(input, &isSoftDropping);
-      }
+    
 
-      xSemaphoreGive(xState);
-    }
+    //if (xSemaphoreTake(xState, portMAX_DELAY)) {
+    //  xSemaphoreGive(xState);
+    //}
     frame++;
 	}
 }
@@ -127,20 +110,6 @@ int main() {
   usartInit();
   displayInit();
   clockInit();
-
-  bufferPixel(red, 2, 6);
-	//bufferPixel(green, 2, 5);
-	//bufferPixel(green, 2, 4);
-	//bufferPixel(red, 5, 6);
-	//bufferPixel(green, 5, 5);
-//	bufferPixel(green, 5, 4);
-	
-	//bufferPixel(blue, 1, 2);
-	//bufferPixel(blue, 2, 1);
-	//bufferPixel(blue, 3, 1);
-	//bufferPixel(blue, 4, 1);
-	//bufferPixel(blue, 5, 1);
-	//bufferPixel(blue, 6, 2);
 
   xCLIQueue = xQueueCreate(1000, sizeof(char));
   xState = xSemaphoreCreateMutex();

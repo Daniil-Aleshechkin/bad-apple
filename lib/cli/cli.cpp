@@ -20,10 +20,6 @@ const char* STARTING_PROMPT = "Tetris CLI: Type \"Help\" for a list of commands"
 
 enum Commands {
 	UNKNOWN,
-	DAS_ENABLE,
-	DAS_DISABLE,
-	ARR_SET,
-	DAS_SET,
 	HELP,
 	QUIT,
 	VERSION,
@@ -116,10 +112,6 @@ void clearScrean() {
 	printScreen((const uint8_t*)PROMPT);
 
 }
-#define DAS_ENABLE_STRING "dasenable"
-#define DAS_DISABLE_STRING "dasdisable"
-#define DAS_SET_STRING "das"
-#define ARR_SET_STIRNG "arr"
 #define HELP_STRING "help"
 #define QUIT_STRING "quit"
 #define VERSION_STRING "version"
@@ -172,18 +164,8 @@ enum Commands parseReturnCommand(char* commandInput) {
     } else {
         length = space - commandInput;
     }
-
-	if(strncmp(DAS_ENABLE_STRING, commandInput, length) == 0x00 && length == sizeof(DAS_ENABLE_STRING) - 1) {
-		return DAS_ENABLE;
-	} else if (strncmp(DAS_DISABLE_STRING, commandInput, length) == 0x00 && length == sizeof(DAS_DISABLE_STRING) - 1) {
-		return DAS_DISABLE;
-	} else if (strncmp(HELP_STRING, commandInput, length) == 0x00 && length == sizeof(HELP_STRING) - 1) {
-		return HELP;
-	} else if (strncmp(DAS_SET_STRING, commandInput, length) == 0x00 && length == sizeof(DAS_SET_STRING) - 1 ) {
-		return DAS_SET;
-	} else if (strncmp(ARR_SET_STIRNG, commandInput, length) == 0x00 && length == sizeof(ARR_SET_STIRNG) - 1) {
-		return ARR_SET;
-	} else if (strncmp(QUIT_STRING, commandInput, length) == 0x00 && length == sizeof(QUIT_STRING) - 1) {
+	
+	if (strncmp(QUIT_STRING, commandInput, length) == 0x00 && length == sizeof(QUIT_STRING) - 1) {
 		return QUIT;
 	} else if (strncmp(VERSION_STRING, commandInput, length) == 0x00 && length == sizeof(VERSION_STRING) - 1) {
 		return VERSION;	
@@ -193,8 +175,6 @@ enum Commands parseReturnCommand(char* commandInput) {
 }
 
 const char* ERROR_PARAM_STRING = "The parameter was not a number";
-const char* DAS_ENABLE_OUTPUT_STRING = "Das enabled";
-const char* DAS_DISABLE_OUTPUT_STRING = "Das disabled";
 const char* HELP_OUTPUT_STRING = "Commands: \n\
 Dasenable: Enable Delayed Auto Repeat \n\
 Dasdisable: Disable Delayed Auto Repeat \n\
@@ -211,32 +191,6 @@ void processCommand(enum Commands command, int value) {
 	char* valueStr = (char*)malloc(sizeof(char) * 20);
 	switch (command)
 	{
-	case DAS_ENABLE:
-		printScreen((const uint8_t*)DAS_ENABLE_OUTPUT_STRING);
-		DAS_ENABLED = true;
-		break;
-	case DAS_DISABLE:
-		printScreen((const uint8_t*)DAS_DISABLE_OUTPUT_STRING);
-		DAS_ENABLED = false;
-		break;
-	case DAS_SET:
-		if (value < 0) {
-			printScreen((const uint8_t*)ERROR_PARAM_STRING);
-			break;
-		}
-		snprintf(valueStr, 20, "Das set to %d", value);
-		printScreen((const uint8_t*)valueStr);
-		DAS_TIME = value;
-		break;
-	case ARR_SET:
-		if (value < 0) {
-			printScreen((const uint8_t*)ERROR_PARAM_STRING);
-			break;
-		}
-		snprintf(valueStr, 20, "Arr set to %d", value);
-		printScreen((const uint8_t*)valueStr);
-		ARR_TIME = value;
-		break;
 	case HELP:
 		printScreen((const uint8_t*)HELP_OUTPUT_STRING);
 		break;

@@ -4,7 +4,7 @@
 # compile C with /usr/share/arm-none-eabi/bin/arm-none-eabi-gcc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/daniil/tetris-rtos/FreeRTOS/Source/portable/GCC/ARM_CM3 -I/home/daniil/tetris-rtos/FreeRTOS/Source/include -I/home/daniil/tetris-rtos/FreeRTOS
+C_INCLUDES = -I/home/daniil/bad-apple/FreeRTOS/Source/portable/GCC/ARM_CM3 -I/home/daniil/bad-apple/FreeRTOS/Source/include -I/home/daniil/bad-apple/FreeRTOS
 
 C_FLAGS = -mcpu=cortex-m3 -mthumb -fdata-sections -ffunction-sections --specs=nano.specs -Wl,--gc-sections -g -g -std=gnu11
 

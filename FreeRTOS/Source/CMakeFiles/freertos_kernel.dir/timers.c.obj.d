@@ -1,5 +1,5 @@
 FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/timers.c.obj: \
- /home/daniil/tetris-rtos/FreeRTOS/Source/timers.c \
+ /home/daniil/bad-apple/FreeRTOS/Source/timers.c \
  /usr/share/arm-none-eabi/arm-none-eabi/include/stdlib.h \
  /usr/share/arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
  /usr/share/arm-none-eabi/arm-none-eabi/include/_ansi.h \
@@ -18,19 +18,19 @@ FreeRTOS/Source/CMakeFiles/freertos_kernel.dir/timers.c.obj: \
  /usr/share/arm-none-eabi/arm-none-eabi/include/assert.h \
  /usr/share/arm-none-eabi/arm-none-eabi/include/machine/stdlib.h \
  /usr/share/arm-none-eabi/arm-none-eabi/include/alloca.h \
- /home/daniil/tetris-rtos/FreeRTOS/Source/include/FreeRTOS.h \
+ /home/daniil/bad-apple/FreeRTOS/Source/include/FreeRTOS.h \
  /usr/share/arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h \
  /usr/share/arm-none-eabi/arm-none-eabi/include/stdint.h \
  /usr/share/arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
  /usr/share/arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
- /home/daniil/tetris-rtos/FreeRTOS/FreeRTOSConfig.h \
- /home/daniil/tetris-rtos/FreeRTOS/Source/include/projdefs.h \
- /home/daniil/tetris-rtos/FreeRTOS/Source/include/portable.h \
- /home/daniil/tetris-rtos/FreeRTOS/Source/include/deprecated_definitions.h \
- /home/daniil/tetris-rtos/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h \
- /home/daniil/tetris-rtos/FreeRTOS/Source/include/mpu_wrappers.h \
- /home/daniil/tetris-rtos/FreeRTOS/Source/include/task.h \
- /home/daniil/tetris-rtos/FreeRTOS/Source/include/list.h \
- /home/daniil/tetris-rtos/FreeRTOS/Source/include/queue.h \
- /home/daniil/tetris-rtos/FreeRTOS/Source/include/task.h \
- /home/daniil/tetris-rtos/FreeRTOS/Source/include/timers.h
+ /home/daniil/bad-apple/FreeRTOS/FreeRTOSConfig.h \
+ /home/daniil/bad-apple/FreeRTOS/Source/include/projdefs.h \
+ /home/daniil/bad-apple/FreeRTOS/Source/include/portable.h \
+ /home/daniil/bad-apple/FreeRTOS/Source/include/deprecated_definitions.h \
+ /home/daniil/bad-apple/FreeRTOS/Source/portable/GCC/ARM_CM3/portmacro.h \
+ /home/daniil/bad-apple/FreeRTOS/Source/include/mpu_wrappers.h \
+ /home/daniil/bad-apple/FreeRTOS/Source/include/task.h \
+ /home/daniil/bad-apple/FreeRTOS/Source/include/list.h \
+ /home/daniil/bad-apple/FreeRTOS/Source/include/queue.h \
+ /home/daniil/bad-apple/FreeRTOS/Source/include/task.h \
+ /home/daniil/bad-apple/FreeRTOS/Source/include/timers.h

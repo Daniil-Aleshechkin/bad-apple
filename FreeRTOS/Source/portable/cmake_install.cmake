@@ -1,4 +1,4 @@
-# Install script for directory: /home/daniil/tetris-rtos/FreeRTOS/Source/portable
+# Install script for directory: /home/daniil/bad-apple/FreeRTOS/Source/portable
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

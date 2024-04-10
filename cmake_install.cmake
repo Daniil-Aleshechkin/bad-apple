@@ -1,4 +1,4 @@
-# Install script for directory: /home/daniil/tetris-rtos
+# Install script for directory: /home/daniil/bad-apple
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/daniil/tetris-rtos/FreeRTOS/Source/cmake_install.cmake")
+  include("/home/daniil/bad-apple/FreeRTOS/Source/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/daniil/tetris-rtos/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/daniil/bad-apple/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

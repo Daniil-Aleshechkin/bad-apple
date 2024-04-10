@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/daniil/tetris-rtos
+CMAKE_SOURCE_DIR = /home/daniil/bad-apple
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/daniil/tetris-rtos
+CMAKE_BINARY_DIR = /home/daniil/bad-apple
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniil/tetris-rtos/CMakeFiles /home/daniil/tetris-rtos//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniil/bad-apple/CMakeFiles /home/daniil/bad-apple//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniil/tetris-rtos/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/daniil/bad-apple/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -523,174 +523,6 @@ lib/com-14646/tim2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/com-14646/tim2.cpp.s
 .PHONY : lib/com-14646/tim2.cpp.s
 
-lib/tetris/TETRIS_GAME_STATE.obj: lib/tetris/TETRIS_GAME_STATE.cpp.obj
-.PHONY : lib/tetris/TETRIS_GAME_STATE.obj
-
-# target to build an object file
-lib/tetris/TETRIS_GAME_STATE.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/tetris/TETRIS_GAME_STATE.cpp.obj
-.PHONY : lib/tetris/TETRIS_GAME_STATE.cpp.obj
-
-lib/tetris/TETRIS_GAME_STATE.i: lib/tetris/TETRIS_GAME_STATE.cpp.i
-.PHONY : lib/tetris/TETRIS_GAME_STATE.i
-
-# target to preprocess a source file
-lib/tetris/TETRIS_GAME_STATE.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/tetris/TETRIS_GAME_STATE.cpp.i
-.PHONY : lib/tetris/TETRIS_GAME_STATE.cpp.i
-
-lib/tetris/TETRIS_GAME_STATE.s: lib/tetris/TETRIS_GAME_STATE.cpp.s
-.PHONY : lib/tetris/TETRIS_GAME_STATE.s
-
-# target to generate assembly for a file
-lib/tetris/TETRIS_GAME_STATE.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/tetris/TETRIS_GAME_STATE.cpp.s
-.PHONY : lib/tetris/TETRIS_GAME_STATE.cpp.s
-
-lib/tetris/TETROMINOS.obj: lib/tetris/TETROMINOS.cpp.obj
-.PHONY : lib/tetris/TETROMINOS.obj
-
-# target to build an object file
-lib/tetris/TETROMINOS.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/tetris/TETROMINOS.cpp.obj
-.PHONY : lib/tetris/TETROMINOS.cpp.obj
-
-lib/tetris/TETROMINOS.i: lib/tetris/TETROMINOS.cpp.i
-.PHONY : lib/tetris/TETROMINOS.i
-
-# target to preprocess a source file
-lib/tetris/TETROMINOS.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/tetris/TETROMINOS.cpp.i
-.PHONY : lib/tetris/TETROMINOS.cpp.i
-
-lib/tetris/TETROMINOS.s: lib/tetris/TETROMINOS.cpp.s
-.PHONY : lib/tetris/TETROMINOS.s
-
-# target to generate assembly for a file
-lib/tetris/TETROMINOS.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/tetris/TETROMINOS.cpp.s
-.PHONY : lib/tetris/TETROMINOS.cpp.s
-
-lib/tetris/board.obj: lib/tetris/board.cpp.obj
-.PHONY : lib/tetris/board.obj
-
-# target to build an object file
-lib/tetris/board.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/tetris/board.cpp.obj
-.PHONY : lib/tetris/board.cpp.obj
-
-lib/tetris/board.i: lib/tetris/board.cpp.i
-.PHONY : lib/tetris/board.i
-
-# target to preprocess a source file
-lib/tetris/board.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/tetris/board.cpp.i
-.PHONY : lib/tetris/board.cpp.i
-
-lib/tetris/board.s: lib/tetris/board.cpp.s
-.PHONY : lib/tetris/board.s
-
-# target to generate assembly for a file
-lib/tetris/board.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/tetris/board.cpp.s
-.PHONY : lib/tetris/board.cpp.s
-
-lib/tetris/holdPiece.obj: lib/tetris/holdPiece.cpp.obj
-.PHONY : lib/tetris/holdPiece.obj
-
-# target to build an object file
-lib/tetris/holdPiece.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/tetris/holdPiece.cpp.obj
-.PHONY : lib/tetris/holdPiece.cpp.obj
-
-lib/tetris/holdPiece.i: lib/tetris/holdPiece.cpp.i
-.PHONY : lib/tetris/holdPiece.i
-
-# target to preprocess a source file
-lib/tetris/holdPiece.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/tetris/holdPiece.cpp.i
-.PHONY : lib/tetris/holdPiece.cpp.i
-
-lib/tetris/holdPiece.s: lib/tetris/holdPiece.cpp.s
-.PHONY : lib/tetris/holdPiece.s
-
-# target to generate assembly for a file
-lib/tetris/holdPiece.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/tetris/holdPiece.cpp.s
-.PHONY : lib/tetris/holdPiece.cpp.s
-
-lib/tetris/piece.obj: lib/tetris/piece.cpp.obj
-.PHONY : lib/tetris/piece.obj
-
-# target to build an object file
-lib/tetris/piece.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/tetris/piece.cpp.obj
-.PHONY : lib/tetris/piece.cpp.obj
-
-lib/tetris/piece.i: lib/tetris/piece.cpp.i
-.PHONY : lib/tetris/piece.i
-
-# target to preprocess a source file
-lib/tetris/piece.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/tetris/piece.cpp.i
-.PHONY : lib/tetris/piece.cpp.i
-
-lib/tetris/piece.s: lib/tetris/piece.cpp.s
-.PHONY : lib/tetris/piece.s
-
-# target to generate assembly for a file
-lib/tetris/piece.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/tetris/piece.cpp.s
-.PHONY : lib/tetris/piece.cpp.s
-
-lib/tetris/srs.obj: lib/tetris/srs.cpp.obj
-.PHONY : lib/tetris/srs.obj
-
-# target to build an object file
-lib/tetris/srs.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/tetris/srs.cpp.obj
-.PHONY : lib/tetris/srs.cpp.obj
-
-lib/tetris/srs.i: lib/tetris/srs.cpp.i
-.PHONY : lib/tetris/srs.i
-
-# target to preprocess a source file
-lib/tetris/srs.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/tetris/srs.cpp.i
-.PHONY : lib/tetris/srs.cpp.i
-
-lib/tetris/srs.s: lib/tetris/srs.cpp.s
-.PHONY : lib/tetris/srs.s
-
-# target to generate assembly for a file
-lib/tetris/srs.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/tetris/srs.cpp.s
-.PHONY : lib/tetris/srs.cpp.s
-
-lib/tetris/tetris_queue.obj: lib/tetris/tetris_queue.cpp.obj
-.PHONY : lib/tetris/tetris_queue.obj
-
-# target to build an object file
-lib/tetris/tetris_queue.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/tetris/tetris_queue.cpp.obj
-.PHONY : lib/tetris/tetris_queue.cpp.obj
-
-lib/tetris/tetris_queue.i: lib/tetris/tetris_queue.cpp.i
-.PHONY : lib/tetris/tetris_queue.i
-
-# target to preprocess a source file
-lib/tetris/tetris_queue.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/tetris/tetris_queue.cpp.i
-.PHONY : lib/tetris/tetris_queue.cpp.i
-
-lib/tetris/tetris_queue.s: lib/tetris/tetris_queue.cpp.s
-.PHONY : lib/tetris/tetris_queue.s
-
-# target to generate assembly for a file
-lib/tetris/tetris_queue.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/tetris/tetris_queue.cpp.s
-.PHONY : lib/tetris/tetris_queue.cpp.s
-
 lib/usart/usart_STM32.obj: lib/usart/usart_STM32.cpp.obj
 .PHONY : lib/usart/usart_STM32.obj
 
@@ -820,27 +652,6 @@ help:
 	@echo "... lib/com-14646/tim2.obj"
 	@echo "... lib/com-14646/tim2.i"
 	@echo "... lib/com-14646/tim2.s"
-	@echo "... lib/tetris/TETRIS_GAME_STATE.obj"
-	@echo "... lib/tetris/TETRIS_GAME_STATE.i"
-	@echo "... lib/tetris/TETRIS_GAME_STATE.s"
-	@echo "... lib/tetris/TETROMINOS.obj"
-	@echo "... lib/tetris/TETROMINOS.i"
-	@echo "... lib/tetris/TETROMINOS.s"
-	@echo "... lib/tetris/board.obj"
-	@echo "... lib/tetris/board.i"
-	@echo "... lib/tetris/board.s"
-	@echo "... lib/tetris/holdPiece.obj"
-	@echo "... lib/tetris/holdPiece.i"
-	@echo "... lib/tetris/holdPiece.s"
-	@echo "... lib/tetris/piece.obj"
-	@echo "... lib/tetris/piece.i"
-	@echo "... lib/tetris/piece.s"
-	@echo "... lib/tetris/srs.obj"
-	@echo "... lib/tetris/srs.i"
-	@echo "... lib/tetris/srs.s"
-	@echo "... lib/tetris/tetris_queue.obj"
-	@echo "... lib/tetris/tetris_queue.i"
-	@echo "... lib/tetris/tetris_queue.s"
 	@echo "... lib/usart/usart_STM32.obj"
 	@echo "... lib/usart/usart_STM32.i"
 	@echo "... lib/usart/usart_STM32.s"

@@ -1,19 +1,7 @@
 #include <stm32f103xb.h>
 #include "usart_STM32.h"
-#include "piece.h"
 #include "util_STM32.h"
-
-enum Colors {
-	RED,
-	BLUE,
-	YELLOW,
-	PURPLE,
-	GREEN,
-	ORANGE,
-	LIGHT_BLUE,
-	GRAY,
-	NONE
-};
+#include "stdbool.h"
 
 void usartInit(void) 
 {
@@ -42,168 +30,12 @@ void sendData(int data) {
 		USART2->DR = (data & 0xFF);
 }
 
-int readData(void) {
+int readData(bool* hasCompleted) {
 		if ((USART2->SR & USART_SR_RXNE) == USART_SR_RXNE) {
 			return USART2->DR;
 		}
 		else  {
+			*hasCompleted = false;
 			return 0x0;
 		}
-}
-
-int getColor(char boardPiece) {
-	switch (boardPiece)
-	{
-	case 'I':
-		return LIGHT_BLUE;
-	case 'Z':
-		return RED;
-	case 'L':
-		return ORANGE;
-	case 'S':
-		return GREEN;
-	case 'J':
-		return BLUE;
-	case 'O':
-		return YELLOW;
-	case 'X':
-		return GRAY;
-	case 'T':
-		return PURPLE;
-	default:
-		return NONE;
-	}
-}
-
-void sendColor(int color) {
-	switch (color)
-	{
-	case RED:
-		sendData(0x1B);
-		sendData(0x5B);
-		sendData('4');
-		sendData('1');
-		sendData('m');
-		break;
-	case GREEN:
-		sendData(0x1B);
-		sendData(0x5B);
-		sendData('4');
-		sendData('2');
-		sendData('m');
-				
-		break;
-	case YELLOW:
-		sendData(0x1B);
-		sendData(0x5B);
-		sendData('4');
-		sendData('3');
-		sendData('m');
-		break;
-	case BLUE:
-		sendData(0x1B);
-		sendData(0x5B);
-		sendData('4');
-		sendData('4');
-		sendData('m');
-
-		break;
-
-	case ORANGE:
-		sendData(0x1B);
-		sendData(0x5B);
-		sendData('4');
-		sendData('1');
-		sendData('m');
-		
-		break;
-
-	case PURPLE:
-		sendData(0x1B);
-		sendData(0x5B);
-		sendData('4');
-		sendData('5');
-		sendData('m');
-		break;
-
-	case LIGHT_BLUE:
-		sendData(0x1B);
-		sendData(0x5B);
-		sendData('4');
-		sendData('6');
-		sendData('m');
-		break;
-
-	case GRAY:
-		sendData(0x1B);
-		sendData(0x5B);
-		sendData('4');
-		sendData('7');
-		sendData('m');
-			
-		break;
-
-	default:
-		sendData(0x1B);
-		sendData(0x5B);
-		sendData('0');
-		sendData('m');
-		break;
-	}
-}
-
-void sendTetrisChars(char** printedBoard) {
-	int color = NONE;
-	
-	sendData(0x1B);
-	sendData(0x5B);
-	sendData('2');
-	sendData('J');
-	
-	sendData(0x1B);
-	sendData(0x5B);
-	sendData('H');
-	for (int i = 0; i < 14; i++) {
-		for (int j = 0; j < 21 ; j++) {
-			int previousColor = color;
-
-			color = getColor((int) printedBoard[i][j]);
-
-			if (previousColor != color) {
-				sendColor(color);
-			}
-
-			if (color != NONE) {
-				sendData(' ');
-
-			} else {
-				sendData((int) printedBoard[i][j]);
-			}
-
-		}
-	}
-
-	for (int i = 14; i < 23; i++) {
-		for (int j = 0; j < 16; j++) {
-			int previousColor = color;
-
-			color = getColor((int) printedBoard[i][j]);
-
-			if (previousColor != color) {
-				sendColor(color);
-			}
-			
-			if (color != NONE) {
-				sendData(' ');
-
-			} else {
-				sendData((int) printedBoard[i][j]);
-			}
-			
-		}
-	}
-
-	
-
-	freePrintedBytes(printedBoard);
 }
