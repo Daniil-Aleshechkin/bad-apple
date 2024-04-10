@@ -51,7 +51,6 @@ add_executable(${PROJECT_NAME}
 # Include directories
 target_include_directories(${PROJECT_NAME} SYSTEM PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/core/inc
-    ${CMAKE_CURRENT_SOURCE_DIR}/lib/tetris
     ${CMAKE_CURRENT_SOURCE_DIR}/lib/usart
     ${CMAKE_CURRENT_SOURCE_DIR}/lib/utils
     ${CMAKE_CURRENT_SOURCE_DIR}/lib/cli
