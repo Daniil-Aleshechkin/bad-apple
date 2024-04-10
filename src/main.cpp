@@ -33,6 +33,7 @@
 #include "semphr.h"
 #include "com_14646_matrix.h"
 #include <stm32f103xb.h>
+#include "ring_buffer.h"
 
 # define mainPRINT_TASK_PRIORITY (tskIDLE_PRIORITY + 2)
 # define mainINPUT_READ_PRIORITY (tskIDLE_PRIORITY + 1)
@@ -79,12 +80,18 @@ void vPrintTask(void* parameters) {
 #define BYTES FRAMES*FRAME_LENGTH
 
 void vInputTask(void* parameters) {
+  static RingBuffer frame_buffer = {{}, 0, 0, 0};
   int input;
   bool hasTimeout = false;
   uint8_t frame[128];
 
   for(;;){
     
+    if (frame_buffer.size == BUFFER_SIZE - 1) {
+      bufferFrame(pop_frame(&frame_buffer));
+      continue;
+    }
+
     __enable_irq();
     hasTimeout = false;
     input = readData(&hasTimeout);
@@ -103,7 +110,8 @@ void vInputTask(void* parameters) {
         sendData(input);
         frame[i] = input;
       }
-      bufferFrame(frame);
+      //bufferFrame(frame);
+      insert_frame(&frame_buffer, frame);
       __enable_irq();
     }
 

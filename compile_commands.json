@@ -86,6 +86,11 @@
 },
 {
   "directory": "/home/daniil/bad-apple",
+  "command": "/usr/share/arm-none-eabi/bin/arm-none-eabi-g++ -DSTM32F1xx -I/home/daniil/bad-apple/FreeRTOS/Source/portable/GCC/ARM_CM3 -isystem /home/daniil/bad-apple/core/inc -isystem /home/daniil/bad-apple/lib/usart -isystem /home/daniil/bad-apple/lib/utils -isystem /home/daniil/bad-apple/lib/cli -isystem /home/daniil/bad-apple/lib/com-14646 -isystem /home/daniil/bad-apple/FreeRTOS/Source/include -isystem /home/daniil/bad-apple/FreeRTOS -mcpu=cortex-m3 -mthumb -fdata-sections -ffunction-sections --specs=nano.specs -Wl,--gc-sections -g -fno-rtti -fno-exceptions -fno-threadsafe-statics -g -mcpu=cortex-m3 -mthumb -DSTM32F103xB -DF_CPU=72000000L -Wall -Wextra -Wpedantic -Wshadow -Wdouble-promotion -Wformat=2 -Wformat-truncation -Wundef -fno-common -Wno-unused-parameter -Wconversion -Wno-volatile -Wold-style-cast -Wuseless-cast -Wsuggest-override -Og -g3 -ggdb -std=gnu++20 -o CMakeFiles/firmware.dir/lib/utils/ring_buffer.cpp.obj -c /home/daniil/bad-apple/lib/utils/ring_buffer.cpp",
+  "file": "/home/daniil/bad-apple/lib/utils/ring_buffer.cpp"
+},
+{
+  "directory": "/home/daniil/bad-apple",
   "command": "/usr/share/arm-none-eabi/bin/arm-none-eabi-g++ -DSTM32F1xx -I/home/daniil/bad-apple/FreeRTOS/Source/portable/GCC/ARM_CM3 -isystem /home/daniil/bad-apple/core/inc -isystem /home/daniil/bad-apple/lib/usart -isystem /home/daniil/bad-apple/lib/utils -isystem /home/daniil/bad-apple/lib/cli -isystem /home/daniil/bad-apple/lib/com-14646 -isystem /home/daniil/bad-apple/FreeRTOS/Source/include -isystem /home/daniil/bad-apple/FreeRTOS -mcpu=cortex-m3 -mthumb -fdata-sections -ffunction-sections --specs=nano.specs -Wl,--gc-sections -g -fno-rtti -fno-exceptions -fno-threadsafe-statics -g -mcpu=cortex-m3 -mthumb -DSTM32F103xB -DF_CPU=72000000L -Wall -Wextra -Wpedantic -Wshadow -Wdouble-promotion -Wformat=2 -Wformat-truncation -Wundef -fno-common -Wno-unused-parameter -Wconversion -Wno-volatile -Wold-style-cast -Wuseless-cast -Wsuggest-override -Og -g3 -ggdb -std=gnu++20 -o CMakeFiles/firmware.dir/lib/utils/util_STM32.cpp.obj -c /home/daniil/bad-apple/lib/utils/util_STM32.cpp",
   "file": "/home/daniil/bad-apple/lib/utils/util_STM32.cpp"
 },

@@ -3,7 +3,7 @@
 #ifndef RING_BUFFER
 #define RING_BUFFER
 
-#define BUFFER_SIZE 60
+#define BUFFER_SIZE 10
 #define FRAME_SIZE 128
 
 typedef struct {

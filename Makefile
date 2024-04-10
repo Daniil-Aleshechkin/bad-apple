@@ -547,6 +547,30 @@ lib/usart/usart_STM32.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/usart/usart_STM32.cpp.s
 .PHONY : lib/usart/usart_STM32.cpp.s
 
+lib/utils/ring_buffer.obj: lib/utils/ring_buffer.cpp.obj
+.PHONY : lib/utils/ring_buffer.obj
+
+# target to build an object file
+lib/utils/ring_buffer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/utils/ring_buffer.cpp.obj
+.PHONY : lib/utils/ring_buffer.cpp.obj
+
+lib/utils/ring_buffer.i: lib/utils/ring_buffer.cpp.i
+.PHONY : lib/utils/ring_buffer.i
+
+# target to preprocess a source file
+lib/utils/ring_buffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/utils/ring_buffer.cpp.i
+.PHONY : lib/utils/ring_buffer.cpp.i
+
+lib/utils/ring_buffer.s: lib/utils/ring_buffer.cpp.s
+.PHONY : lib/utils/ring_buffer.s
+
+# target to generate assembly for a file
+lib/utils/ring_buffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.dir/build.make CMakeFiles/firmware.dir/lib/utils/ring_buffer.cpp.s
+.PHONY : lib/utils/ring_buffer.cpp.s
+
 lib/utils/util_STM32.obj: lib/utils/util_STM32.cpp.obj
 .PHONY : lib/utils/util_STM32.obj
 
@@ -655,6 +679,9 @@ help:
 	@echo "... lib/usart/usart_STM32.obj"
 	@echo "... lib/usart/usart_STM32.i"
 	@echo "... lib/usart/usart_STM32.s"
+	@echo "... lib/utils/ring_buffer.obj"
+	@echo "... lib/utils/ring_buffer.i"
+	@echo "... lib/utils/ring_buffer.s"
 	@echo "... lib/utils/util_STM32.obj"
 	@echo "... lib/utils/util_STM32.i"
 	@echo "... lib/utils/util_STM32.s"
