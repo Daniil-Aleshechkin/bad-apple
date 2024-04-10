@@ -8,11 +8,11 @@ def get_image_path_for_frame(frame: int):
 
 port = sys.argv[1]
 baudrate = 1500000
-ser = serial.Serial(port, baudrate, timeout=0.05)
+ser = serial.Serial(port, baudrate, timeout=0.6)
 
 CUT_OFF_LEVEL = 124
 
-BYTE_LEVELS = [128, 64, 32, 16, 8, 4, 2, 1]
+BYTE_LEVELS = [1, 2, 4, 8, 16, 32, 64, 128]
 
 def get_byte_string_for_frame(frame: int):
     byte_string = []
@@ -46,24 +46,27 @@ def get_byte_string_for_frame(frame: int):
 #     byte_ack = ser.read()
 #     print(byte_ack)
 total_frames = 6562
-frames = 6
-byte_string = get_byte_string_for_frame(538)
+frames = 1
+
 sucessfullySent = False
 
 print(total_frames // frames)
 
-for x in range(total_frames // frames):
+for x in range(1,total_frames // frames):
+    byte_string = get_byte_string_for_frame(x)
     sucessfullySent = False
     while(not sucessfullySent):
-        for i in range(frames):
+        ser.write(b'\x0e')
+        response = ser.read()
+
+        print(response)
+
+        if (response == b'\x51'):
             ser.write(byte_string)
-        expected =  frames*128
-        actual = len([int(x) for x in ser.read(frames*128)])
-        
-        print("EXPECTED BYTES: ", expected)
-        print("ACTUAL: ", actual)
+            expected = len(byte_string)
+            actual = ser.read(128)
+            print(actual)
+            sucessfullySent = expected == len(actual)
 
-        sucessfullySent = expected == actual
-
-    time.sleep(0.1)
+    time.sleep(0.03)
 ser.close()

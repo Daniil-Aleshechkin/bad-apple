@@ -1,4 +1,5 @@
 #include "stdbool.h"
+#include "stdint.h"
 
 #ifndef COM_146464_MATRIX 
 #define COM_146464_MATRIX
@@ -54,5 +55,7 @@ void displayInit(void);
  * This does not immediately affect the display; `refreshDisplay()` must be called to update the display.
  */
 void clearBuffer(void);
+
+void bufferFrame(uint8_t frame[128]);
 
 #endif
